@@ -1,0 +1,27 @@
+[
+	{
+		"name": "minh01",
+		"email": "minh@01",
+		"password": "$2b$10$fmG.i0x1sIXWSHwORlS1vOAxBziCvdsa8X1nLNTPBlGQ7spAZggvW"
+	},
+	{
+		"name": "minh02",
+		"email": "minh@02",
+		"password": "$2b$10$HUbyIbdViRtnZhii4dAIGOpFMrf2a/gaoPWZxlCrYR2VcwT1wSj9e"
+	},
+	{
+		"name": "minh03",
+		"email": "minh@03",
+		"password": "$2b$10$HaBiLRPhBmqquqqwwy4qseDS6.P7smptze7vsEperypJLUZiZ1Gau"
+	},
+	{
+		"name": "minh 04",
+		"email": "minh@04",
+		"password": "$2b$10$bAxr5Z.rWDHIWHy9lySpwubZ2Opk0s/St1kTwvoyO248JiBnKx8he"
+	},
+	{
+		"name": "minh05",
+		"email": "minh@05",
+		"password": "$2b$10$6lXp1GSVLM0d0wNAHaamJObWMT7X4cAs8kdg3hSYCwHNxKIpbG9BG"
+	}
+]
