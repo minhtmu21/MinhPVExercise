@@ -6,6 +6,8 @@ const port = 3000;
 const morgan = require('morgan')
 const session = require('express-session')
 
+let arr
+
 app.use(session({
   secret: 'keyboard cat',
   resave: false,
@@ -70,7 +72,7 @@ app.get('/register', function (req, res) {
 //   if (req.session.email) next()
 //   else res.redirect('login')
 // })
-app.get('/homePage', isAuthenticated, function (req, res,next) {
+app.get('/homePage', isAuthenticated, function (req, res, next) {
   return next()
 })
 app.get('/homePage', function (req, res) {
@@ -156,7 +158,7 @@ app.post("/register", function (req, res) {
 
   //check format body file json
   try {
-    var arr = require(path);
+    arr = require(path);
   } catch (err) {
     let response = {
       status: 2,
@@ -239,7 +241,7 @@ app.post("/login", function (req, res) {
   }
 
   try {
-    var arr = require(path);
+    arr = require(path);
   } catch (err) {
     let response = {
       status: 2,
@@ -248,9 +250,11 @@ app.post("/login", function (req, res) {
     return res.render('login', response)
   }
 
+  let acc
+
   for (const account of arr) {
     if (email == account.email) {
-      var acc = account;
+      acc = account;
     }
   }
 
