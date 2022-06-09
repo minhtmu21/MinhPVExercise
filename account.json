@@ -23,5 +23,15 @@
 		"name": "minh05",
 		"email": "minh@05",
 		"password": "$2b$10$6lXp1GSVLM0d0wNAHaamJObWMT7X4cAs8kdg3hSYCwHNxKIpbG9BG"
+	},
+	{
+		"name": "minh06",
+		"email": "minh@06",
+		"password": "$2b$10$kxp6iPptYe7ry6cbUc//p.T8YROL2sqCaweOiB1beiknsE67BwZc6"
+	},
+	{
+		"name": "minh07",
+		"email": "minh@07",
+		"password": "$2b$10$Rm5lacWWwbywXJlAxcq4R.N8IH6hO0Si4pCxseOVknFDK9/rSsniC"
 	}
 ]

@@ -77,6 +77,17 @@ app.get('/homePage', function (req, res) {
   return res.render("homePage")
 })
 
+app.get('/logout', function (req, res, next) {
+  req.session.email = null
+  req.session.save(function (err) {
+    if (err) next(err)
+    req.session.regenerate(function (err) {
+      if (err) next(err)
+      res.redirect('/')
+    })
+  })
+})
+
 app.post("/register", function (req, res) {
   const {
     name,
@@ -259,7 +270,6 @@ app.post("/login", function (req, res) {
       req.session.email = req.body.email
       req.session.save(function (err) {
         if (err) return next(err)
-        res.redirect('/')
       })
     })
     return res.render('homePage', response)
@@ -270,17 +280,6 @@ app.post("/login", function (req, res) {
     }
     return res.render('login', response)
   }
-})
-
-app.get('/logout', function (req, res, next) {
-  req.session.email = null
-  req.session.save(function (err) {
-    if (err) next(err)
-    req.session.regenerate(function (err) {
-      if (err) next(err)
-      res.redirect('/')
-    })
-  })
 })
 
 //getAllAccount
