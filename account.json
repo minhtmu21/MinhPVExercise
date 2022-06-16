@@ -33,5 +33,15 @@
 		"name": "minh07",
 		"email": "minh@07",
 		"password": "$2b$10$Rm5lacWWwbywXJlAxcq4R.N8IH6hO0Si4pCxseOVknFDK9/rSsniC"
+	},
+	{
+		"name": "minh08",
+		"email": "minh@08",
+		"password": "$2b$10$rZwvADRmVRJ1118kHTbplOmzTqWF12AR9h3WsYHFeAw1DxfkaKC4S"
+	},
+	{
+		"name": "minh",
+		"email": "quan@1",
+		"password": "$2b$10$nAuAofZ.Qr82LFp1Du6qf.3kpcKqfdh/bMjoAYr717W1mu3pHaBWG"
 	}
 ]
